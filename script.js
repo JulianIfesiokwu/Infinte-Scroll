@@ -11,8 +11,7 @@ const apiKey = `jvH3lB1m3rfNLXy5BHTDk6UoilGmPZ9_KllltlyjVyA`;
 const apiUrl = `https://api.unsplash.com/photos/random/?client_id=${apiKey}&count=${count}`;
 
 //Check if all images are loaded
-function imageLoaded() {
-    
+function imageLoaded() {    
     imagesLoaded++;
     if(imageLoaded === totalImages) {
         ready = true;
@@ -67,7 +66,6 @@ async function getPhotos() {
 
     } catch (error) {
         //Catch error here
-
     }
 }
 
